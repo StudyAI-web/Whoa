@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Status</title>
+    <!-- Importing a professional and modern font -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #0a0a0f; /* Deep professional dark background */
+            color: #ffffff;
+            font-family: 'Space Grotesk', sans-serif;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+            animation: fadeIn 1s ease-out;
+            padding: 20px;
+        }
+
+        /* Subtle glowing professional badge */
+        .status-badge {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #ff5555;
+            backdrop-filter: blur(10px);
+        }
+
+        /* The main headline */
+        h1 {
+            font-size: clamp(3rem, 8vw, 8rem);
+            font-weight: 700;
+            margin: 0;
+            line-height: 1;
+            letter-spacing: -2px;
+            /* Sleek metallic gradient text effect */
+            background: linear-gradient(135deg, #ffffff 0%, #a8b0c9 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Subtext */
+        p {
+            font-size: 1.25rem;
+            color: #8892b0;
+            margin: 0;
+            max-width: 500px;
+            font-weight: 500;
+        }
+
+        /* Button to add interaction or use as an easter egg */
+        button {
+            margin-top: 20px;
+            background-color: #ffffff;
+            color: #0a0a0f;
+            border: none;
+            padding: 16px 32px;
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(255, 255, 255, 0.2);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="status-badge">System Status: Critical</div>
+        <h1>YOU ARE SO COOKED</h1>
+        <p>There is no known patch or workaround for your current situation. Proceed with caution.</p>
+        
+        <button onclick="alert('Confirmed: You are officially cooked.')">Acknowledge</button>
+    </div>
+</body>
+</html>
